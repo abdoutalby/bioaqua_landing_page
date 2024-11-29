@@ -63,12 +63,25 @@
             color: #007bff;
         }
 
+        .testimonial-card {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-10px);
+        }
+
         .testimonial img {
             border-radius: 50%;
             width: 100px;
             height: 100px;
             object-fit: cover;
             margin-bottom: 20px;
+        }
+
+        .testimonial-card-body {
+            text-align: center;
         }
     </style>
 </head>
@@ -169,25 +182,37 @@
             <h2 class="mb-4">What Our Clients Say</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <blockquote class="blockquote">
-                        <img src="https://picsum.photos/100/100?random=1" alt="Client 1">
-                        <p>"BioAqua Solutions has revolutionized our water treatment process with their sustainable and efficient technology."</p>
-                        <footer class="blockquote-footer">Jane Doe, <cite title="Source Title">GreenTech Industries</cite></footer>
-                    </blockquote>
+                    <div class="card testimonial-card shadow-lg border-light rounded">
+                        <div class="card-body testimonial-card-body">
+                            <img src="https://picsum.photos/100/100?random=1" alt="Client 1">
+                            <p class="blockquote">
+                                "BioAqua Solutions has revolutionized our water treatment process with their sustainable and efficient technology."
+                            </p>
+                            <footer class="blockquote-footer">Jane Doe, <cite title="Source Title">GreenTech Industries</cite></footer>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <blockquote class="blockquote">
-                        <img src="https://picsum.photos/100/100?random=2" alt="Client 2">
-                        <p>"Their IoT solutions helped us streamline our operations, saving us time and resources while maintaining high standards."</p>
-                        <footer class="blockquote-footer">John Smith, <cite title="Source Title">Clean Water Systems</cite></footer>
-                    </blockquote>
+                    <div class="card testimonial-card shadow-lg border-light rounded">
+                        <div class="card-body testimonial-card-body">
+                            <img src="https://picsum.photos/100/100?random=2" alt="Client 2">
+                            <p class="blockquote">
+                                "Their IoT solutions helped us streamline our operations, saving us time and resources while maintaining high standards."
+                            </p>
+                            <footer class="blockquote-footer">John Smith, <cite title="Source Title">Clean Water Systems</cite></footer>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <blockquote class="blockquote">
-                        <img src="https://picsum.photos/100/100?random=3" alt="Client 3">
-                        <p>"We’ve seen a significant improvement in both water quality and energy efficiency, thanks to BioAqua Solutions."</p>
-                        <footer class="blockquote-footer">Mary Lee, <cite title="Source Title">EcoWater</cite></footer>
-                    </blockquote>
+                    <div class="card testimonial-card shadow-lg border-light rounded">
+                        <div class="card-body testimonial-card-body">
+                            <img src="https://picsum.photos/100/100?random=3" alt="Client 3">
+                            <p class="blockquote">
+                                "We’ve seen a significant improvement in both water quality and energy efficiency, thanks to BioAqua Solutions."
+                            </p>
+                            <footer class="blockquote-footer">Mary Lee, <cite title="Source Title">EcoWater</cite></footer>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
