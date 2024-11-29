@@ -62,15 +62,18 @@
             padding: 60px 20px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex-wrap: wrap;
         }
         .service {
             text-align: center;
             padding: 20px;
             max-width: 320px;
+            flex: 1 1 300px; /* Flexbox will adjust for small screens */
             transition: transform 0.3s ease-in-out;
             background: #f9f9f9;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
         }
         .service:hover {
             transform: translateY(-10px);
@@ -98,6 +101,7 @@
             justify-content: space-around;
             padding: 60px 20px;
             background: #f9f9f9;
+            flex-wrap: wrap;
         }
         .team-member {
             text-align: center;
@@ -106,6 +110,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
         }
         .team-member img {
             width: 100%;
@@ -126,6 +131,7 @@
             justify-content: space-around;
             padding: 60px 20px;
             background: #fff;
+            flex-wrap: wrap;
         }
         .case-study {
             background: #f9f9f9;
@@ -133,6 +139,7 @@
             padding: 20px;
             max-width: 320px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
         }
         .case-study h4 {
             color: #006994;
@@ -214,6 +221,44 @@
             color: #006994;
         }
 
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            .services, .team, .case-studies {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service, .team-member, .case-study {
+                max-width: 100%;
+            }
+            .cta h2, .core-values h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .services, .team, .case-studies {
+                padding: 40px 10px;
+            }
+            .service i {
+                font-size: 50px;
+            }
+            .team-member img {
+                width: 80%;
+            }
+            .cta h2, .core-values h2 {
+                font-size: 1.4rem;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -247,44 +292,47 @@
         <img src="https://via.placeholder.com/150" alt="Team Member">
         <h4>John Doe</h4>
         <p>CEO & Founder</p>
-        <p>John is a visionary leader with over 15 years of experience in water management and sustainability practices.</p>
     </div>
     <div class="team-member">
         <img src="https://via.placeholder.com/150" alt="Team Member">
         <h4>Jane Smith</h4>
         <p>Lead Engineer</p>
-        <p>Jane specializes in the development and implementation of water treatment and aquaculture systems.</p>
+    </div>
+    <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member">
+        <h4>Emily Lee</h4>
+        <p>Project Manager</p>
     </div>
 </section>
 
 <section class="case-studies">
     <div class="case-study">
-        <h4>Project 1: Water Treatment in Urban Areas</h4>
-        <p>We successfully implemented a water treatment solution that improved water quality for over 100,000 residents in a major city.</p>
+        <h4>Case Study 1</h4>
+        <p>Learn how BioAqua Solutions helped a leading municipality reduce water waste and optimize filtration systems, leading to improved environmental sustainability and cost savings.</p>
     </div>
     <div class="case-study">
-        <h4>Project 2: Aquaculture System in Coastal Regions</h4>
-        <p>Our custom aquaculture system helped a local fish farm increase production by 30% while maintaining environmental integrity.</p>
+        <h4>Case Study 2</h4>
+        <p>Our innovative aquaculture solutions have revolutionized fish farming operations, enabling clients to boost their production while reducing environmental impact.</p>
     </div>
 </section>
 
 <section class="core-values">
     <h2>Our Core Values</h2>
-    <p>We are driven by our commitment to sustainability, innovation, and excellence. Our solutions are designed to protect natural resources and contribute to a greener future for all.</p>
+    <p>At BioAqua Solutions, we prioritize innovation, sustainability, and environmental stewardship in all our operations. We aim to create smarter, greener, and more efficient water management solutions for industries worldwide.</p>
 </section>
 
 <section class="cta">
-    <h2>Join Us in Creating a Sustainable Future</h2>
-    <p>At BioAqua Solutions, we are committed to providing cutting-edge technologies and expertise for clean water, aquatic environments, and sustainable water management. Together, we can help safeguard water resources for future generations.</p>
-    <button>Get Started Now</button>
+    <h2>Get Started with BioAqua Solutions</h2>
+    <p>Contact us today to discuss how we can help you achieve sustainable water management solutions for your business.</p>
+    <button>Contact Us</button>
 </section>
 
 <footer>
     <p>&copy; 2024 BioAqua Solutions. All rights reserved.</p>
     <div class="social-links">
-        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">LinkedIn</a>
     </div>
 </footer>
 
