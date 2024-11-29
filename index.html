@@ -3,127 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BioAqua Solutions</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8;
+            background-color: #f4f4f4;
             color: #333;
         }
+        h1, h2 {
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header / Hero Section */
         header {
-            background: #00bcd4;
-            color: white;
-            padding: 20px 0;
+            background: linear-gradient(to right, #006994, #004f6e);
+            color: #fff;
+            padding: 50px 0;
             text-align: center;
         }
         header h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-        .hero-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 60vh;
-            background: #00bcd4;
-            color: white;
-            text-align: center;
-        }
-        .hero-section h2 {
-            font-size: 2em;
-            margin: 0;
-        }
-        .cta-button {
-            background-color: #ff5722;
-            padding: 10px 20px;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
-        .cta-button:hover {
-            background-color: #e64a19;
-        }
-        section {
-            padding: 50px 20px;
-        }
-        section h2 {
-            font-size: 2em;
-            text-align: center;
+            font-size: 3rem;
             margin-bottom: 20px;
         }
-        .services, .about {
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        header button {
+            background: #fff;
+            color: #006994;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        header button:hover {
+            background: #f1f1f1;
+        }
+
+        /* Services Section */
+        .services {
             display: flex;
             justify-content: space-around;
-            gap: 20px;
-            flex-wrap: wrap;
+            padding: 40px 0;
+            background: #fff;
         }
-        .service-card, .about-card {
-            background-color: white;
-            padding: 20px;
-            width: 250px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .service {
             text-align: center;
-            border-radius: 10px;
+            padding: 20px;
+            max-width: 250px;
         }
+        .service h3 {
+            margin: 10px 0;
+            color: #006994;
+        }
+        .service p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Call-to-Action */
+        .cta {
+            background: #006994;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .cta button {
+            background: #fff;
+            color: #006994;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta button:hover {
+            background: #f1f1f1;
+        }
+
+        /* Footer */
         footer {
-            background-color: #333;
-            color: white;
+            background: #333;
+            color: #fff;
             text-align: center;
             padding: 20px;
         }
+        footer p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
     </style>
 </head>
 <body>
 
 <header>
-    <h1>BioAqua Solutions</h1>
-    <p>Innovating Water Treatment and Smart Farming Technologies</p>
+    <h1>Welcome to BioAqua Solutions</h1>
+    <p>Innovative solutions for sustainable water management and aquatic services.</p>
+    <button>Explore Our Solutions</button>
 </header>
 
-<section class="hero-section">
-    <div>
-        <h2>Empowering Sustainable Solutions for a Better Tomorrow</h2>
-        <a href="#contact" class="cta-button">Contact Us Today</a>
+<section class="services">
+    <div class="service">
+        <h3>Water Treatment</h3>
+        <p>We provide advanced water treatment technologies for industries and municipalities, ensuring clean and safe water for all.</p>
+    </div>
+    <div class="service">
+        <h3>Aquaculture Systems</h3>
+        <p>Our state-of-the-art aquaculture systems help you achieve sustainable fish farming with optimal water quality and environment management.</p>
+    </div>
+    <div class="service">
+        <h3>Water Quality Monitoring</h3>
+        <p>Our real-time monitoring solutions allow you to track water quality parameters, ensuring compliance and preventing contamination.</p>
     </div>
 </section>
 
-<section id="about">
-    <h2>About BioAqua Solutions</h2>
-    <div class="about">
-        <div class="about-card">
-            <h3>Our Mission</h3>
-            <p>At BioAqua Solutions, we specialize in designing and building innovative reverse osmosis (RO) systems for clean water, and we provide cutting-edge automatic smart farming tools to help farmers optimize production and reduce environmental impact.</p>
-        </div>
-        <div class="about-card">
-            <h3>Our Vision</h3>
-            <p>Our vision is to lead the future of sustainable agriculture and water purification by integrating advanced technologies that ensure both resource efficiency and environmental harmony.</p>
-        </div>
-    </div>
-</section>
-
-<section id="services">
-    <h2>Our Services</h2>
-    <div class="services">
-        <div class="service-card">
-            <h3>Reverse Osmosis Systems</h3>
-            <p>We design custom RO systems for residential, industrial, and agricultural purposes, ensuring the highest quality water purification for all needs.</p>
-        </div>
-        <div class="service-card">
-            <h3>Smart Farming Tools</h3>
-            <p>Our smart farming solutions include automated irrigation systems, climate-controlled environments, and IoT-enabled sensors for precision farming.</p>
-        </div>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Get in Touch</h2>
-    <p>Interested in our solutions? Let’s connect!</p>
-    <a href="mailto:info@bioaquasolutions.com" class="cta-button">Email Us</a>
+<section class="cta">
+    <h2>Join Us in Creating a Sustainable Future</h2>
+    <p>At BioAqua Solutions, we are committed to providing cutting-edge technologies and expertise for clean water, aquatic environments, and sustainable water management.</p>
+    <button>Get Started Now</button>
 </section>
 
 <footer>
