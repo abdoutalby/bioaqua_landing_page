@@ -66,8 +66,11 @@
         .service {
             text-align: center;
             padding: 20px;
-            max-width: 280px;
+            max-width: 320px;
             transition: transform 0.3s ease-in-out;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .service:hover {
             transform: translateY(-10px);
@@ -80,14 +83,84 @@
         .service p {
             font-size: 1rem;
             color: #555;
+            line-height: 1.5;
+            margin-bottom: 15px;
         }
         .service i {
-            font-size: 50px;
+            font-size: 60px;
             color: #006994;
             margin-bottom: 15px;
         }
 
-        /* Call-to-Action */
+        /* Team Section */
+        .team {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background: #f9f9f9;
+        }
+        .team-member {
+            text-align: center;
+            max-width: 220px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .team-member h4 {
+            color: #006994;
+            font-weight: 600;
+        }
+        .team-member p {
+            color: #555;
+        }
+
+        /* Case Studies Section */
+        .case-studies {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background: #fff;
+        }
+        .case-study {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 320px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .case-study h4 {
+            color: #006994;
+            font-weight: 600;
+        }
+        .case-study p {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Core Values Section */
+        .core-values {
+            text-align: center;
+            padding: 60px 20px;
+            background: #006994;
+            color: #fff;
+        }
+        .core-values h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+        .core-values p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* CTA Section */
         .cta {
             background: #006994;
             color: #fff;
@@ -155,23 +228,54 @@
     <div class="service">
         <i class="fas fa-water"></i>
         <h3>Water Treatment</h3>
-        <p>We provide advanced water treatment technologies for industries and municipalities, ensuring clean and safe water for all.</p>
+        <p>We provide state-of-the-art water treatment solutions that ensure clean and safe water for industries, municipalities, and communities. Our advanced filtration and purification technologies guarantee superior water quality, protecting both the environment and public health.</p>
     </div>
     <div class="service">
         <i class="fas fa-fish"></i>
         <h3>Aquaculture Systems</h3>
-        <p>Our state-of-the-art aquaculture systems help you achieve sustainable fish farming with optimal water quality and environment management.</p>
+        <p>Our aquaculture systems help optimize fish farming, ensuring sustainable operations with minimal environmental impact. We design and implement innovative systems for aquaculture facilities, improving efficiency and maximizing production in harmony with nature.</p>
     </div>
     <div class="service">
         <i class="fas fa-tint"></i>
         <h3>Water Quality Monitoring</h3>
-        <p>Our real-time monitoring solutions allow you to track water quality parameters, ensuring compliance and preventing contamination.</p>
+        <p>Our real-time water quality monitoring systems provide accurate data to track critical water quality parameters. This enables industries and municipalities to prevent contamination, comply with regulations, and optimize water usage for sustainable operations.</p>
     </div>
+</section>
+
+<section class="team">
+    <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member">
+        <h4>John Doe</h4>
+        <p>CEO & Founder</p>
+        <p>John is a visionary leader with over 15 years of experience in water management and sustainability practices.</p>
+    </div>
+    <div class="team-member">
+        <img src="https://via.placeholder.com/150" alt="Team Member">
+        <h4>Jane Smith</h4>
+        <p>Lead Engineer</p>
+        <p>Jane specializes in the development and implementation of water treatment and aquaculture systems.</p>
+    </div>
+</section>
+
+<section class="case-studies">
+    <div class="case-study">
+        <h4>Project 1: Water Treatment in Urban Areas</h4>
+        <p>We successfully implemented a water treatment solution that improved water quality for over 100,000 residents in a major city.</p>
+    </div>
+    <div class="case-study">
+        <h4>Project 2: Aquaculture System in Coastal Regions</h4>
+        <p>Our custom aquaculture system helped a local fish farm increase production by 30% while maintaining environmental integrity.</p>
+    </div>
+</section>
+
+<section class="core-values">
+    <h2>Our Core Values</h2>
+    <p>We are driven by our commitment to sustainability, innovation, and excellence. Our solutions are designed to protect natural resources and contribute to a greener future for all.</p>
 </section>
 
 <section class="cta">
     <h2>Join Us in Creating a Sustainable Future</h2>
-    <p>At BioAqua Solutions, we are committed to providing cutting-edge technologies and expertise for clean water, aquatic environments, and sustainable water management.</p>
+    <p>At BioAqua Solutions, we are committed to providing cutting-edge technologies and expertise for clean water, aquatic environments, and sustainable water management. Together, we can help safeguard water resources for future generations.</p>
     <button>Get Started Now</button>
 </section>
 
