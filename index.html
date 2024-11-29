@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioAqua Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         /* Global Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
@@ -23,52 +24,66 @@
 
         /* Header / Hero Section */
         header {
-            background: linear-gradient(to right, #006994, #004f6e);
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
             color: #fff;
-            padding: 50px 0;
+            padding: 120px 0;
             text-align: center;
+            background-size: cover;
+            position: relative;
         }
         header h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 20px;
+            font-weight: 600;
         }
         header p {
             font-size: 1.2rem;
             margin-bottom: 30px;
         }
         header button {
-            background: #fff;
-            color: #006994;
-            padding: 10px 20px;
-            font-size: 1rem;
+            background: #006994;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 1.1rem;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background 0.3s ease;
         }
         header button:hover {
-            background: #f1f1f1;
+            background: #004f6e;
         }
 
         /* Services Section */
         .services {
             display: flex;
             justify-content: space-around;
-            padding: 40px 0;
+            padding: 60px 20px;
             background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .service {
             text-align: center;
             padding: 20px;
-            max-width: 250px;
+            max-width: 280px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .service:hover {
+            transform: translateY(-10px);
         }
         .service h3 {
             margin: 10px 0;
             color: #006994;
+            font-weight: 600;
         }
         .service p {
             font-size: 1rem;
             color: #555;
+        }
+        .service img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
         }
 
         /* Call-to-Action */
@@ -81,6 +96,7 @@
         .cta h2 {
             font-size: 2rem;
             margin-bottom: 20px;
+            font-weight: 600;
         }
         .cta p {
             font-size: 1.2rem;
@@ -94,6 +110,7 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            transition: background 0.3s ease;
         }
         .cta button:hover {
             background: #f1f1f1;
@@ -104,11 +121,23 @@
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 30px 20px;
         }
         footer p {
             font-size: 1rem;
             margin: 0;
+        }
+        footer .social-links {
+            margin-top: 20px;
+        }
+        footer .social-links a {
+            margin: 0 15px;
+            color: #fff;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        footer .social-links a:hover {
+            color: #006994;
         }
 
     </style>
@@ -123,14 +152,17 @@
 
 <section class="services">
     <div class="service">
+        <img src="https://via.placeholder.com/50" alt="Water Treatment Icon">
         <h3>Water Treatment</h3>
         <p>We provide advanced water treatment technologies for industries and municipalities, ensuring clean and safe water for all.</p>
     </div>
     <div class="service">
+        <img src="https://via.placeholder.com/50" alt="Aquaculture Systems Icon">
         <h3>Aquaculture Systems</h3>
         <p>Our state-of-the-art aquaculture systems help you achieve sustainable fish farming with optimal water quality and environment management.</p>
     </div>
     <div class="service">
+        <img src="https://via.placeholder.com/50" alt="Water Quality Monitoring Icon">
         <h3>Water Quality Monitoring</h3>
         <p>Our real-time monitoring solutions allow you to track water quality parameters, ensuring compliance and preventing contamination.</p>
     </div>
@@ -144,6 +176,11 @@
 
 <footer>
     <p>&copy; 2024 BioAqua Solutions. All rights reserved.</p>
+    <div class="social-links">
+        <a href="#" target="_blank">&#xf082;</a> <!-- Facebook -->
+        <a href="#" target="_blank">&#xf09b;</a> <!-- Twitter -->
+        <a href="#" target="_blank">&#xf0d2;</a> <!-- LinkedIn -->
+    </div>
 </footer>
 
 </body>
