@@ -1,341 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BioAqua Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Global Styles */
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F4F4F9;
-            color: #333;
-        }
-        h1, h2 {
-            margin: 0;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Header / Hero Section */
-        header {
-            background: url('https://www.bioaquasolutions.com/images/water-treatment.jpg') no-repeat center center/cover;
-            color: #fff;
-            padding: 120px 0;
-            text-align: center;
+        .hero {
+            background: url('your-image-path.jpg') no-repeat center center;
             background-size: cover;
-            position: relative;
-        }
-        header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            font-weight: 600;
-            color: #00A8A1;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        header button {
-            background: #FF6F61;
-            color: #fff;
-            padding: 12px 25px;
-            font-size: 1.1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        header button:hover {
-            background: #e65c4f;
-        }
-
-        /* Services Section */
-        .services {
+            height: 100vh;
             display: flex;
-            justify-content: space-around;
-            padding: 60px 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            flex-wrap: wrap;
-        }
-        .service {
-            text-align: center;
-            padding: 20px;
-            max-width: 320px;
-            flex: 1 1 300px;
-            transition: transform 0.3s ease-in-out;
-            background: #E6F7F5;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-        }
-        .service:hover {
-            transform: translateY(-10px);
-        }
-        .service h3 {
-            margin: 10px 0;
-            color: #00A8A1;
-            font-weight: 600;
-        }
-        .service p {
-            font-size: 1rem;
-            color: #555;
-            line-height: 1.5;
-            margin-bottom: 15px;
-        }
-        .service i {
-            font-size: 60px;
-            color: #00A8A1;
-            margin-bottom: 15px;
+            justify-content: center;
+            align-items: center;
+            color: white;
         }
 
-        /* Team Section */
-        .team {
-            display: flex;
-            justify-content: space-around;
-            padding: 60px 20px;
-            background: #fff;
-            flex-wrap: wrap;
-        }
-        .team-member {
-            text-align: center;
-            max-width: 220px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-        }
-        .team-member img {
-            width: 100%;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-        .team-member h4 {
-            color: #00A8A1;
-            font-weight: 600;
-        }
-        .team-member p {
-            color: #555;
+        .service-icon {
+            font-size: 50px;
+            color: #007bff;
         }
 
-        /* Case Studies Section */
-        .case-studies {
-            display: flex;
-            justify-content: space-around;
-            padding: 60px 20px;
-            background: #fff;
-            flex-wrap: wrap;
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
         }
-        .case-study {
-            background: #E6F7F5;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 320px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-        }
-        .case-study h4 {
-            color: #00A8A1;
-            font-weight: 600;
-        }
-        .case-study p {
-            color: #555;
-            line-height: 1.5;
-        }
-
-        /* Core Values Section */
-        .core-values {
-            text-align: center;
-            padding: 60px 20px;
-            background: #00A8A1;
-            color: #fff;
-        }
-        .core-values h2 {
-            margin-bottom: 20px;
-            font-size: 2rem;
-            font-weight: 600;
-        }
-        .core-values p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-
-        /* CTA Section */
-        .cta {
-            background: #FF6F61;
-            color: #fff;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .cta h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-        .cta p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-        .cta button {
-            background: #fff;
-            color: #FF6F61;
-            padding: 12px 25px;
-            font-size: 1.1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        .cta button:hover {
-            background: #f1f1f1;
-        }
-
-        /* Footer */
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 30px 20px;
-        }
-        footer p {
-            font-size: 1rem;
-            margin: 0;
-        }
-        footer .social-links {
-            margin-top: 20px;
-        }
-        footer .social-links a {
-            margin: 0 15px;
-            color: #fff;
-            font-size: 1.5rem;
-            transition: color 0.3s ease;
-        }
-        footer .social-links a:hover {
-            color: #00A8A1;
-        }
-
-        /* Media Queries for Responsiveness */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-            .services, .team, .case-studies {
-                flex-direction: column;
-                align-items: center;
-            }
-            .service, .team-member, .case-study {
-                max-width: 100%;
-            }
-            .cta h2, .core-values h2 {
-                font-size: 1.6rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            header p {
-                font-size: 1rem;
-            }
-            .services, .team, .case-studies {
-                padding: 40px 10px;
-            }
-            .service i {
-                font-size: 50px;
-            }
-            .team-member img {
-                width: 80%;
-            }
-            .cta h2, .core-values h2 {
-                font-size: 1.4rem;
-            }
-        }
-
     </style>
 </head>
+
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">BioAqua Solutions</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<header>
-    <h1>Welcome to BioAqua Solutions</h1>
-    <p>Innovative solutions for sustainable water management and aquatic services.</p>
-    <button>Explore Our Solutions</button>
-</header>
+    <!-- Hero Section -->
+    <section class="hero text-center text-white">
+        <div class="container">
+            <h1 class="display-4">Welcome to BioAqua Solutions</h1>
+            <p class="lead">Innovative solutions for a sustainable future</p>
+            <a href="#services" class="btn btn-primary btn-lg">Discover Our Services</a>
+        </div>
+    </section>
 
-<section class="services">
-    <div class="service">
-        <i class="fas fa-water"></i>
-        <h3>Water Treatment</h3>
-        <p>We provide state-of-the-art water treatment solutions that ensure clean and safe water for industries, municipalities, and homes.</p>
-    </div>
-    <div class="service">
-        <i class="fas fa-fish"></i>
-        <h3>Aquaculture Systems</h3>
-        <p>Our advanced aquaculture systems enhance fish farming, improving yield while reducing environmental impact.</p>
-    </div>
-    <div class="service">
-        <i class="fas fa-chart-line"></i>
-        <h3>Water Quality Monitoring</h3>
-        <p>With cutting-edge monitoring systems, we help you track critical water parameters for optimal sustainability and regulatory compliance.</p>
-    </div>
-</section>
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h4>Sustainable Solutions</h4>
+                    <p>Providing eco-friendly systems for water and environmental conservation.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h4>Water Treatment</h4>
+                    <p>Innovative water purification and treatment technologies for all needs.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Automation & Tech</h4>
+                    <p>Advanced automation and IoT solutions for efficient bio-aqua management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="team">
-    <div class="team-member">
-        <img src="https://www.bioaquasolutions.com/images/team/john_doe.jpg" alt="John Doe">
-        <h4>John Doe</h4>
-        <p>CEO & Founder</p>
-    </div>
-    <div class="team-member">
-        <img src="https://www.bioaquasolutions.com/images/team/jane_smith.jpg" alt="Jane Smith">
-        <h4>Jane Smith</h4>
-        <p>Lead Engineer</p>
-    </div>
-    <div class="team-member">
-        <img src="https://www.bioaquasolutions.com/images/team/emily_lee.jpg" alt="Emily Lee">
-        <h4>Emily Lee</h4>
-        <p>Project Manager</p>
-    </div>
-</section>
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 BioAqua Solutions. All rights reserved.</p>
+        </div>
+    </footer>
 
-<section class="case-studies">
-    <div class="case-study">
-        <h4>Case Study 1</h4>
-        <p>Learn how BioAqua Solutions helped a leading municipality reduce water waste and optimize filtration systems, leading to improved environmental sustainability and cost savings.</p>
-    </div>
-    <div class="case-study">
-        <h4>Case Study 2</h4>
-        <p>Our innovative aquaculture solutions have revolutionized fish farming operations, enabling clients to boost their production while reducing environmental impact.</p>
-    </div>
-</section>
-
-<section class="core-values">
-    <h2>Our Core Values</h2>
-    <p>At BioAqua Solutions, we prioritize innovation, sustainability, and environmental stewardship in all our operations. We aim to create smarter, greener, and more efficient water management solutions for industries worldwide.</p>
-</section>
-
-<section class="cta">
-    <h2>Get Started with BioAqua Solutions</h2>
-    <p>Contact us today to discuss how we can help you achieve sustainable water management solutions for your business.</p>
-    <button>Contact Us</button>
-</section>
-
-<footer>
-    <p>&copy; 2024 BioAqua Solutions. All rights reserved.</p>
-    <div class="social-links">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="#">LinkedIn</a>
-    </div>
-</footer>
-
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
+
 </html>
